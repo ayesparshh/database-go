@@ -92,7 +92,7 @@ func (d *Driver) Write(collection , resource string, data interface{}) error {
 
 	tmpPath := fnlpath + ".tmp"
 
-	if err := os.Mkdir(fnlpath, 0755); err != nil {
+	if err := os.Mkdir(path, 0755); err != nil {
 		return fmt.Errorf("err creating file %s",fnlpath)
 	}	
 
